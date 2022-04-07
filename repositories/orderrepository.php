@@ -12,7 +12,7 @@ class OrderRepository extends Repository
         try {
             $initialize = new initializeMollie;
             $mollie = $initialize->initialize();
-            $redirectUrl = "http://localhost/order?orderId=" . $orderId;
+            $redirectUrl = "https://haarlemfestival.herokuapp.com/order?orderId=" . $orderId;
             $payment = $mollie->payments->create([
                 "amount" => [
                     "currency" => "EUR",
@@ -21,7 +21,7 @@ class OrderRepository extends Repository
                 "method" => $data['payment'],
                 "description" => substr($data['description'], 0, 50),
                 "redirectUrl" => $redirectUrl,
-                "webhookUrl"  => "https://webshop.example.org/mollie-webhook/",
+                "webhookUrl"  => "https://haarlemfestival.herokuapp.com/api/webhook",
                 "metadata" => [
                     "order_id" => $orderId,
                 ],
