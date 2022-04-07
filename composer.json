@@ -1,5 +1,6 @@
 {
     "require": {
+        "ext-gd": "*",
         "mollie/mollie-api-php": "2.0",
         "bacon/bacon-qr-code": "^2.0",
         "khanamiryan/qrcode-detector-decoder": "1.0.5.2",
