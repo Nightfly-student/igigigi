@@ -1,0 +1,521 @@
+/* Fonts */
+@font-face {
+  font-family: sSeri;
+  src: url(../fonts/FiraSans-Medium.ttf);
+}
+@font-face {
+  font-family: Seri;
+  src: url(../fonts/PTSerif-Regular.ttf);
+}
+p {
+  font-family: Seri;
+  letter-spacing: 0.7px;
+}
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sSeri;
+}
+.font-s {
+  font-family: sSeri;
+}
+.font-ss {
+  font-family: Seri;
+}
+/* Main */
+body {
+  overflow-x: hidden;
+  background-color: #121212;
+}
+main {
+  background-color: #121212;
+}
+
+footer {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #404040;
+  
+}
+.cursor {
+  cursor: pointer;
+}
+/* divider */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* BootStrap Changes */
+.btn-primary {
+  background-color: #aa64ff;
+  border-color: #aa64ff;
+}
+.color-primary {
+  color: #aa64ff;
+}
+.color-secondary {
+  color: #bb86fc;
+}
+.active-secondary {
+  background-color: #bb86fc;
+  border-color: #bb86fc;
+}
+.btn-primary:hover {
+  background-color: #b981ff;
+  border-color: #b981ff;
+}
+.btn-primary:focus {
+  background-color: #b981ff;
+  border-color: #ba82ff;
+  box-shadow: 0 0 0 0.15rem #a876e6;
+}
+.btn-primary:active {
+  background-color: #b981ff;
+  border-color: #b981ff;
+}
+.btn-primary:disabled {
+  background-color: gray;
+  border-color: gray;
+}
+
+.bg-dark {
+  background-color: #202020 !important;
+}
+.bg-dark-secondary {
+  background-color: #1b1b1b;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+.inline-row p {
+  display: inline;
+}
+
+.card {
+  border: none;
+  background: #121212;
+}
+
+.background {
+  background-color: #121212;
+}
+.backgroundnavbar {
+  background-color: #aa64ff !important;
+}
+
+.background-restaurant {
+  background-color: #222222;
+}
+
+.brder {
+  border-bottom: 1px solid grey;
+}
+
+.fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 3px 3px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+/* Additional CSS */
+.img-400 {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.img-events {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.img-sponsors {
+  height: 300px;
+  object-fit: contain;
+}
+.bg-event {
+  background-color: #1b1b1b;
+}
+.img-tickets {
+  height: 330px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.img-restaurant {
+  height: 80%;
+  width: 150px;
+}
+.img-restaurant-overlay {
+  height: 30px;
+  width: 50px;
+}
+
+/* filter css */
+.filter-checkbox {
+  width: 25px !important;
+  height: 25px !important;
+  background-color: #c4c4c4;
+}
+.filter-text {
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  background-color: #414141;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+/* Cart */
+.img-cart {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* ??? */
+.navbarborder {
+  border-bottom: #ffffff;
+}
+
+.nounderline {
+  text-decoration: none;
+}
+
+/* contact */
+.contact-section {
+  background: #303030 
+}
+.contact-section h1 {
+  text-align: center;
+  color: #ddd;
+}
+.contact-form {
+  /* max-width: 600px; */
+  /* margin: auto; */
+  padding: 0 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.contact-form-text {
+  width: 100%;
+  margin: 16px 0;
+  border: 0;
+  background: #c4c4c4;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 20px;
+}
+.contact-form-textarea {
+  /*display: block; 
+  box-sizing: border-box;*/
+  width: 100%;
+  margin: 16px 0;
+  border: 0;
+  background: #c4c4c4;
+  height: 175px;
+  font-size: 30px;
+  border-radius: 20px;
+}
+.contact-color1 {
+  color: #bb86fc;
+}
+.contact-form-btn {
+  /* float: left; */
+  border: 0;
+  background: #aa64ff;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: #bb86fc;
+}
+.contact-text {
+  margin-top: 40px;
+  font-size: 30px;
+}
+.contact-label {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* Popups */
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+.modal-content {
+  background-color: #121212;
+}
+.modal-text1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: sSeri;
+  color: #fff;
+}
+
+.close-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn1 {
+  margin: auto;
+  width: 200px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.popupnumber {
+  width: 50px;
+}
+/* Dance Event */
+.img-dance {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.highlight-text {
+  color: #bb86fc;
+}
+
+/* Checkout Steps */
+
+.progresses {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 120px;
+  margin-top: 40px;
+  height: 3px;
+  background: white;
+}
+
+.steps {
+  display: flex;
+  background-color: white;
+  color: #fff;
+  font-size: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.steps i {
+  padding-bottom: 40px;
+}
+.active {
+  background-color: #bb86fc;
+}
+/* Checkout Form */
+.form-checkout-input-text {
+  background-color: #c4c4c4;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 250px;
+  color: black;
+}
+.form-select-checkout {
+  background-color: #c4c4c4;
+  width: 250px;
+  border-radius: 10px;
+}
+.form-house {
+  width: 40px;
+}
+.form-check-input {
+  background-color: #c4c4c4;
+}
+.form-check-input:checked {
+  background-color: #F686FC;
+}
+@media (max-width: 912px) {
+  .ms-n2 {
+    margin-left: -20px !important;
+  }
+}
+
+.search-box{
+  position: relative;
+  padding-left:0px;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #414141;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:black;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 50%;
+  position: absolute;
+  right: 12px;
+  background-color:#414141 ;
+  color:white;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,1);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,1);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.modal-login {
+  color: #202020;
+  width: 350px;
+  margin: 30px auto;
+  
+}
+.modal-login h4 {
+ text-align: center;
+}
+.modal-login .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  
+}
+.modal-login  .form-group {
+  position: relative;
+}
+.modal-login  .form-group .btn {
+  width: 100%;
+}
+.modal-login .close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.modal-login i {
+  position: absolute;
+  left: 13px;
+  top: 11px;
+  font-size: 18px;
+}
+.modal-login .form-control {
+  padding-left: 40px;
+}
+.modal-login .form-control:focus {
+  border-color: #fff;
+}
+.modal-login .form-control, .modal-login .btn {
+  min-height: 40px;
+  border-radius: 3px; 
+}
+.modal-login .hint-text {
+  text-align: center;
+  padding-top: 10px;
+}
+.modal-login .btn {
+  border: none;
+  line-height: normal;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+  background: #404040;
+}
+.modal-login .modal-footer {
+  border-color: #dee4e7;
+  text-align: center;
+  margin: 0 -20px -20px;
+  border-radius: 5px;
+  font-size: 18px;
+  justify-content: center;
+}
+.modal-login .modal-footer a {
+  color: #999;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
