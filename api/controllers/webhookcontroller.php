@@ -32,11 +32,7 @@ class WebhookController
                     if ($payment->isPaid() && !$payment->hasRefunds() && !$payment->hasChargebacks()) {
 
                         $tickets = $this->orderService->getPaidTickets($payment->id);
-                        $this->documentService->sendOrder($tickets);
 
-                    } elseif ($payment->isPending()) {
-
-                        $tickets = $this->orderService->getPaidTickets($payment->id);
                         $ticketArray = [];
                         foreach ($tickets as $ticket) {
                             $event = $this->ticketsService->getEvent($ticket->getSession());
@@ -59,6 +55,8 @@ class WebhookController
                             }
                         }
                         $this->orderService->removeTicketsFromEvents($ticketArray);
+
+                        $this->documentService->sendOrder($tickets);
                     } elseif ($payment->isFailed()) {
 
                         $tickets = $this->orderService->getPaidTickets($payment->id);
